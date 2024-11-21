@@ -3,6 +3,7 @@ import Combine
 
 class Interactor {
     private let apiKey = "4d12877a1ef9ab64bdada1fa2263b7db"
+    80830d2f588cf2c74d3cc684eee7f098
 
     func fetchWeather(for city: String, completion: @escaping (WeatherResponse?, PollutionResponse?, String?) -> Void) {
         fetchCoordinates(for: city) { coordinates, error in
