@@ -55,7 +55,7 @@ class Interactor {
     private func fetchPollutionData(lat: Double, lon: Double, completion: @escaping (PollutionResponse?, String?) -> Void) {
         let pollutionUrlString = "https://api.openweathermap.org/data/2.5/air-pollution?lat=\(lat)&lon=\(lon)&appid=\(apiKey)"
 
-        https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(apiKey)
+        https://http://api.openweathermap.org/data/2.5/air_pollution?lat=\(lat)&lon=\(lon)&appid=\(apiKey)
         
         guard let url = URL(string: pollutionUrlString) else {
             completion(nil, "Invalid URL for pollution data")
